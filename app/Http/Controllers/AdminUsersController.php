@@ -46,8 +46,13 @@ class AdminUsersController extends Controller
     public function store(UsersRequest $request)
     {
         //
-        return $request->all();
+        User::create($request->all());
+
+        return redirect('/admin/users');
+
+
     }
+
 
     /**
      * Display the specified resource.
