@@ -44,11 +44,21 @@
             {!! Form::password('password', ['class'=>'form-control']) !!}
         </div>
 
-        <div class="form-group">
-            {!! Form::submit('Edit Users', ['class'=>'btn btn-primary']) !!}
+
+        <div class="form-group col-sm-6">
+            {!! Form::submit('Edit Users', ['class'=>'btn btn-primary btn-block']) !!}
         </div>
 
         {!! Form::close() !!}
+
+        {!! Form::open(['method'=>'Delete','action'=>['AdminUsersController@destroy',$user->id]]) !!}
+            <div class="form-group col-sm-6">
+                {!! Form::submit('Delete Users', ['class'=>'btn btn-danger btn-block']) !!}
+            </div>
+
+            {!! Form::close() !!}
+
+
     </div>
 
     <div class="row">
