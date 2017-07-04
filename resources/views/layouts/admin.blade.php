@@ -23,7 +23,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    @yield('styles')
 
 
 
@@ -157,9 +157,9 @@
                                 <a href="{{route('admin.categories.index')}}">All Categories</a>
                             </li>
 
-                            <li>
-                                <a href="{{route('admin.categories.create')}}">Create Category</a>
-                            </li>
+                            {{--<li>--}}
+                                {{--<a href="{{route('admin.categories.create')}}">Create Category</a>--}}
+                            {{--</li>--}}
 
                         </ul>
                         <!-- /.nav-second-level -->
@@ -170,11 +170,11 @@
                         <a href="#"><i class="fa fa-wrench fa-fw"></i>Media<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/media">All Media</a>
+                                <a href="{{route('admin.media.index')}}">All Media</a>
                             </li>
 
                             <li>
-                                <a href="">Upload Media</a>
+                                <a href="{{route('admin.media.create')}}">Upload Media</a>
                             </li>
 
                         </ul>
@@ -354,7 +354,7 @@
 
 
 
-
+@yield('scripts')
 
 </body>
 
