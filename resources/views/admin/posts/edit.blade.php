@@ -38,20 +38,20 @@
 
 
         <div class="form-group">
-            {!! Form::submit('Create Users', ['class'=>'btn btn-primary col-sm-6']) !!}
+            {!! Form::submit('Update post', ['class'=>'btn btn-primary col-sm-6']) !!}
         </div>
-
+        {!! Form::close() !!}
 
 
         {!! Form::open(['method'=>'DELETE','action'=>['AdminPostsController@destroy',$post->id]]) !!}
 
             <div class="form-group">
-                {!! Form::submit('Delete Users', ['class'=>'btn btn-danger col-sm-6']) !!}
+                {!! Form::submit('Delete post', ['class'=>'btn btn-danger col-sm-6']) !!}
             </div>
 
             {!! Form::close() !!}
 
-        {!! Form::close() !!}
+
 
         <div class="row">
 

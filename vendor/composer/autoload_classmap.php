@@ -6,7 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddPhotoColumnToComments' => $baseDir . '/database/migrations/2017_07_04_161151_add_photo_column_to_comments.php',
     'AddPhotoIdToUsers' => $baseDir . '/database/migrations/2017_06_16_015856_add_photo_id_to_users.php',
+    'AddPhotoToComments' => $baseDir . '/database/migrations/2017_07_04_161713_add_photo_to_comments.php',
+    'AddSlugToPosts' => $baseDir . '/database/migrations/2017_07_07_043531_add_slug_to_posts.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2017_07_02_092414_create_categories_table.php',
     'CreateCommentRepliesTable' => $baseDir . '/database/migrations/2017_07_04_095702_create_comment_replies_table.php',
     'CreateCommentsTable' => $baseDir . '/database/migrations/2017_07_04_094833_create_comments_table.php',

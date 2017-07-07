@@ -2,11 +2,18 @@
 
 namespace App;
 
+
 use Illuminate\Database\Eloquent\Model;
+
 
 class Post extends Model
 {
     //
+
+
+
+
+
 
     protected $fillable = [
         'user_id',
@@ -36,7 +43,7 @@ class Post extends Model
 
     public function comments(){
 
-        return $this->hasMany('App\Comments');
+        return $this->hasMany('App\Comment');
 
     }
 
